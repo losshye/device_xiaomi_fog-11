@@ -413,6 +413,12 @@
     },
     {
       "PowerHint": "LAUNCH",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 2000,
+      "Value": "2400000"
+    },
+    {
+      "PowerHint": "LAUNCH",
       "Node": "BGUClampMaxBoost",
       "Duration": 3000,
       "Value": "51.20"
@@ -428,6 +434,12 @@
       "Node": "TAUClampBoost",
       "Duration": 3000,
       "Value": "40.90"
+    },
+    {
+      "PowerHint": "LAUNCH",
+      "Node": "FGUClampBoost",
+      "Duration": 3000,
+      "Value": "61.50"
     },
     {
       "PowerHint": "LAUNCH",

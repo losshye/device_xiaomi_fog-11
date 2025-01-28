@@ -88,7 +88,29 @@ on property:init.svc.recovery=running
     write /dev/cpuctl/nnapi-hal/cpu.shares 20480
     write /dev/cpuctl/rt/cpu.shares 20480
     write /dev/cpuctl/top-app/cpu.shares 20480
->>>>>>> 1d07a36 (fog: init|powerhint: import and apply uclamp boosting values from spes tree)
+
+    # Setup final cpu.uclamp.min
+    write /dev/cpuctl/top-app/cpu.uclamp.min 0.00
+    write /dev/cpuctl/foreground/cpu.uclamp.min 0.00
+    write /dev/cpuctl/system/cpu.uclamp.min 0.00
+
+    # Set uclamp.max for some groups, which could indicate cpu importance used in scheduling
+    write /dev/cpuctl/background/cpu.uclamp.max 51.20
+    write /dev/cpuctl/system-background/cpu.uclamp.max 51.20
+    write /dev/cpuctl/dex2oat/cpu.uclamp.max 61.50
+
+    # Setup cpu.shares to throttle background groups (bg ~ 5% sysbg ~ 5% dex2oat ~2.5%)
+    write /dev/cpuctl/background/cpu.shares 1024
+    write /dev/cpuctl/system-background/cpu.shares 1024
+    write /dev/cpuctl/dex2oat/cpu.shares 512
+    write /dev/cpuctl/system/cpu.shares 20480
+
+    # We only have system and background groups holding tasks and the groups below are empty
+    write /dev/cpuctl/camera-daemon/cpu.shares 20480
+    write /dev/cpuctl/foreground/cpu.shares 20480
+    write /dev/cpuctl/nnapi-hal/cpu.shares 20480
+    write /dev/cpuctl/rt/cpu.shares 20480
+    write /dev/cpuctl/top-app/cpu.shares 20480
 
 on early-init
     # configure governor settings
