@@ -130,7 +130,8 @@ persist.vendor.bt.aac_frm_ctl.enabled=true
 persist.vendor.qcom.bluetooth.soc=cherokee
 persist.vendor.service.bdroid.sibs=false
 ro.bluetooth.a2dp_offload.supported=true
-ro.vendor.bluetooth.wipower=false
+ro.bluetooth.emb_wp_mode=true
+ro.bluetooth.wipower=true
 vendor.hw.fm.init=0
 vendor.qcom.bluetooth.soc=cherokee
 
@@ -297,7 +298,6 @@ ro.surface_flinger.use_color_management=true
 debug.sf.phase_offset_threshold_for_next_vsync_ns=6100000
 ro.surface_flinger.vsync_event_phase_offset_ns=2000000
 ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
-ro.surface_flinger.wcg_composition_dataspace=143261696
 
 # Thermal
 vendor.sys.thermal.data.path=/data/vendor/thermal/
