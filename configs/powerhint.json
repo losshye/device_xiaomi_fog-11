@@ -412,7 +412,7 @@
     {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMinFreq",
-      "Duration": 2000,
+      "Duration": 3000,
       "Value": "2400000"
     },
     {
@@ -441,9 +441,9 @@
     },
     {
       "PowerHint": "LAUNCH",
-      "Node": "FGUClampBoost",
+      "Node": "CPULittleClusterMinFreq",
       "Duration": 3000,
-      "Value": "61.50"
+      "Value": "1900800"
     },
     {
       "PowerHint": "LAUNCH",
