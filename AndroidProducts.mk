@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_fog.mk
+    $(LOCAL_DIR)/nitrogen_fog.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_fog-user \
-    lineage_fog-userdebug \
-    lineage_fog-eng
+    nitrogen_fog-user \
+    nitrogen_fog-userdebug \
+    nitrogen_fog-eng
