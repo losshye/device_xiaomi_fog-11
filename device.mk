@@ -589,3 +589,6 @@ PRODUCT_BOOT_JARS += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/fog/fog-vendor.mk)
+
+#Sign-key
+include vendor/lineage-priv/keys/keys.mk
