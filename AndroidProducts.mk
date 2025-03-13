@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nitrogen_fog.mk
+    $(LOCAL_DIR)/derp_fog.mk
 
 COMMON_LUNCH_CHOICES := \
-    nitrogen_fog-user \
-    nitrogen_fog-userdebug \
-    nitrogen_fog-eng
+    derp_fog-user \
+    derp_fog-userdebug \
+    derp_fog-eng
